@@ -3,7 +3,6 @@
 
 ## PostGIS -> GEOJSON
 
-
 ## Remove tests
 rm minor_islands.json
 rm minor_islands_coastline.json
@@ -19,7 +18,6 @@ echo "finished making geojson."
 
 ## GEOJSON -> VTs
 
-
 ## Remove tests
 rm minor_islands.mbtiles
 rm minor_islands_coastline.mbtiles
@@ -30,7 +28,6 @@ echo "finished making .mbtiles."
 
 
 ## VTs -> Upload API
-
 
 ## Install mapbox-upload API (if you have ignore)
 npm install --global mapbox-upload
