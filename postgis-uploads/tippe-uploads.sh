@@ -7,5 +7,5 @@ npm install --save mapbox-upload
 
 ## Third: upload .mbtiles with Mapbox Uploads API
 
-node upload.js minor_islands.mbtiles mslee $MapboxAccessToken minorislands
-node upload.js minor_islands_coastline.mbtiles mslee $MapboxAccessToken minorislandscoast
+node upload.js minor_islands.mbtiles mslee $MapboxAccessToken mslee.minorislands
+node upload.js minor_islands_coastline.mbtiles mslee $MapboxAccessToken mslee.minorislandscoast
