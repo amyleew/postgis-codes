@@ -11,5 +11,5 @@
 
 ## Third: upload .mbtiles with Mapbox Uploads API
 
-node upload.js minor_islands.mbtiles mslee $MapboxAccessToken minorislands
-node upload.js minor_islands_coastline.mbtiles mslee $MapboxAccessToken minorislandscoast
+node /Users/amyleewalton/amyleew/_repo/postgis-codes/postgis-uploads/upload.js minor_islands.mbtiles mslee $MapboxAccessToken minorislands
+node /Users/amyleewalton/amyleew/_repo/postgis-codes/postgis-uploads/upload.js minor_islands_coastline.mbtiles mslee $MapboxAccessToken minorislandscoast
