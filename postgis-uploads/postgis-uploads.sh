@@ -22,8 +22,8 @@ echo "finished making geojson."
 rm minor_islands.mbtiles
 rm minor_islands_coastline.mbtiles
 # convert .json to .mbtiles
-tippecanoe -o minor_islands.mbtiles minor_islands.json
-tippecanoe -o minor_islands_coastline.mbtiles minor_islands_coastline.json
+# -f delete if .mbtile is already made, -Z (minzoom), -z (maxzoom)
+tippecanoe -o -f -Z0 -z8 minor_islands.mbtiles minor_islands.json minor_islands_coastline.json
 echo "finished making .mbtiles."
 
 
