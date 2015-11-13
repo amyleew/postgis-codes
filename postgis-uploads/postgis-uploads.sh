@@ -20,10 +20,9 @@ echo "finished making geojson."
 
 ## Remove tests
 rm minor_islands.mbtiles
-rm minor_islands_coastline.mbtiles
 # convert .json to .mbtiles
 # -f delete if .mbtile is already made, -Z (minzoom), -z (maxzoom)
-tippecanoe -o -f -Z0 -z8 minor_islands.mbtiles minor_islands.json minor_islands_coastline.json
+tippecanoe -o -f -Z8 -z16 minor_islands.mbtiles minor_islands.json minor_islands_coastline.json
 echo "finished making .mbtiles."
 
 
@@ -35,4 +34,3 @@ npm install --global mapbox-upload
 export MapboxAccessToken=$TOKEN
 # uploader CLI format: mapbox-upload username.dataid /path/to/file
 mapbox-upload mslee.minorislands minor_islands.mbtiles
-mapbox-upload mslee.minorcoast minor_islands_coastline.mbtiles
